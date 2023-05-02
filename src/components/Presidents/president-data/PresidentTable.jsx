@@ -11,10 +11,13 @@ const PresidentTable = (props) => {
             <th>Last Name</th>
             <th>Year</th>
             <th>Year Passed</th>
+            <th>Age</th>
           </tr>
         </thead>
         <tbody>
-          <PresidentRow />
+          {props.presidentData.map((president) => (
+            <PresidentRow president={president} />
+          ))}
         </tbody>
       </table>
     </>

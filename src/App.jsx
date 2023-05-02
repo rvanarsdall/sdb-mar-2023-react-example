@@ -2,6 +2,7 @@ import "./App.css";
 import ButtonClick from "./components/ButtonClick";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import ChallengeThreeInstructions from "./components/challenge/ChallengeThreeInstructions";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Header />
       </div>
       <ButtonClick />
+      <ChallengeThreeInstructions />
       <Footer />
     </div>
   );

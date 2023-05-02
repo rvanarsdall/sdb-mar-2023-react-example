@@ -2,10 +2,15 @@ const PresidentRow = (props) => {
   return (
     <>
       <tr>
-        <td>George</td>
-        <td>Washington</td>
-        <td>1732</td>
-        <td>1799</td>
+        <td>{props.president.first}</td>
+        <td>{props.president.last}</td>
+        <td>{props.president.year}</td>
+        <td>{props.president.passed}</td>
+        <td>
+          {props.president.passed
+            ? props.president.passed - props.president.year
+            : 2023 - props.president.year}
+        </td>
       </tr>
     </>
   );
